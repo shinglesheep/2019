@@ -6,7 +6,7 @@
     <script>
       function letsSubmit() {
         alert("hi!  it worked!");
-        $("#response").append("How interesting!");
+        $("#response").append($("#character").val()+"?  How interesting!");
       }
     </script>
   </head>
@@ -15,7 +15,7 @@
     <p>Hello world!</p>
     <form id="harry">
       Who is your favorite character?
-      <input type="text" id="name"/>
+      <input type="text" id="character"/>
       <input type="button" value="submit" onclick="letsSubmit()"/>
       <div id="response"></div>
     </form>
