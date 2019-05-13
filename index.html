@@ -6,6 +6,7 @@
     <script>
       function letsSubmit() {
         alert("hi!  it worked!");
+        $("#response").innerHTML("How interesting!");
       }
     </script>
   </head>
@@ -15,7 +16,7 @@
     <form id="harry">
       Who is your favorite character?
       <input type="text" id="name"/>
-      <input type="button" value="submit" onclick="letsSubmit"/>
+      <input type="button" value="submit" onclick="letsSubmit()"/>
       <div id="response"></div>
     </form>
   </body>
